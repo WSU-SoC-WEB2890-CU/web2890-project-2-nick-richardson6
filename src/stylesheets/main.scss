@@ -14,7 +14,7 @@ $black:    #000;
 
 
 $primary: #7B949C;
-$secondary: #4AA2EA;
+$secondary: #1C85DD;
 $teritary: #C4C8CC; 
 $accent: #E63946;
 $light: #f6f6f6;
@@ -103,6 +103,16 @@ body {
     }
 }
 
+
+.footer-line {
+    border: none;
+    height: 2px;
+    background-color: #4A5A60;
+    margin-top: 2rem;
+}
+
+
+
 // focus
 
 .focus {
@@ -126,6 +136,13 @@ body {
 
 }
 
+.focus-overlay {
+    background: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(2px);      
+    padding-bottom: 9.75rem;
+  }
+  
+
 // who we are
 
 .who {
@@ -143,6 +160,8 @@ body {
         padding-left: 2rem;
         padding-right: 2rem;
     }
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 // form
@@ -160,7 +179,7 @@ body {
 // footer
 
 .site-footer {
-    background-color: $primary;
+    background-color: $secondary;
 }
 
 // 
@@ -169,3 +188,11 @@ body {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
+
+.hardline {
+    background-color: black;
+    height: 2px;
+    margin: 1rem 0 0 0; 
+    border: none;
+}
+  
