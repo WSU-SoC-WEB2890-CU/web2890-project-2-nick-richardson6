@@ -1,3 +1,198 @@
 /* Your styles go here */
+
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+
+$primary: #7B949C;
+$secondary: #1C85DD;
+$teritary: #C4C8CC; 
+$accent: #E63946;
+$light: #f6f6f6;
+
+
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+
+body {
+    font-family: "Quicksand", sans-serif;
+}
+
+// components
+
+.btn-cta {
+    background-color: $secondary;
+    color: $light;
+    border-radius: 20px;
+
+    &:hover {
+        background-color: darken($secondary, 12%);
+        color: $light;
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+// navigation
+
+.nav-link {
+
+
+    &:hover {
+        color: $secondary;
+        outline: none;
+        box-shadow: none;
+        text-decoration: underline;
+    }
+}
+
+
+// hero
+
+.hero-section {
+    background-image: url("../images/hero copy.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    margin-top: 80px;
+}
+
+.hero-text {
+    color: $secondary;
+}
+
+// cards
+
+.cards {
+    background-color: $primary;
+}
+
+.card-bg {
+    background-color: $teritary;
+    border-radius: 20px;
+    padding: 2rem;
+    
+}
+
+.card-img {
+    border-radius: 20px;
+}
+
+.card-btn {
+    background-color: $secondary;
+    color: $light;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 20px;
+
+    &:hover {
+        background-color: darken($secondary, 15%);
+        color: $light;
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+
+.footer-line {
+    border: none;
+    height: 2px;
+    background-color: #4A5A60;
+    margin-top: 2rem;
+}
+
+
+
+// focus
+
+.focus {
+    background-image: url("../images/focus.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+
+    h1 {
+        text-align: center;
+        padding-top: 8rem;
+    }
+
+    p {
+        text-align: center;
+        padding-top: 3rem;
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+
+}
+
+.focus-overlay {
+    background: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(2px);      
+    padding-bottom: 9.75rem;
+  }
+  
+
+// who we are
+
+.who {
+    padding-top: 82px;
+    background-color: $primary;
+}
+
+
+// values
+
+.values {
+    background-color: $primary;
+
+    .card-btn {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+// form
+.form {
+    padding-top: 82px;
+    background-color: $primary;
+    color: $light;
+
+    button {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+// footer
+
+.site-footer {
+    background-color: $secondary;
+}
+
+// 
+
+.spacing {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+.hardline {
+    background-color: black;
+    height: 2px;
+    margin: 1rem 0 0 0; 
+    border: none;
+}
+  
